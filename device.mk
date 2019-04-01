@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-mokee
 
 # Inherit from msm8953-common
 $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8953
+    vendor.mokee.touch@1.0-service.xiaomi_8953
 
 # Call the camera setup
 $(call inherit-product, vendor/xiaomi/MiuiCamera/MiuiCamera-vendor.mk)
