@@ -62,6 +62,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi_8953
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk_package \
+    libstdc++.vendor
+
 # Call the camera setup
 $(call inherit-product, vendor/xiaomi/MiuiCamera/MiuiCamera-vendor.mk)
 $(call inherit-product, vendor/xiaomi/MiuiCamera/tiffany.mk)
