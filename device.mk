@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# MiuiCamera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-MiuiCamera.xml:system/etc/permissions/privapp-permissions-MiuiCamera.xml
+
 # Properties
 -include device/xiaomi/tiffany/prop.mk
 
